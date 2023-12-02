@@ -1,0 +1,16 @@
+.header {
+  &__container {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__navigation-menu::after {
+    content: "";
+    background-image: url(/src/img/header/menu.svg);
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+}
+

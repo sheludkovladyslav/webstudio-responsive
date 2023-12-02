@@ -1,0 +1,28 @@
+.hero {
+  background-image: url(/src/img/hero/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  padding: 0px 60px;
+  @extend %flexibility;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+
+  &__title {
+    @include text($colorTextTertiary, 26px, 900);
+    text-align: center;
+    line-height: 42px; /* 161.538% */
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    padding: 10px 24px;
+    @include text($colorTextTertiary, 16px, 700);
+    text-align: center;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+  }
+}

@@ -24,5 +24,11 @@
     text-align: center;
     line-height: 30px; /* 187.5% */
     letter-spacing: 0.96px;
+    &:hover {
+      background-color: $colorTextTertiary;
+      color: $colorTextActive;
+      @include animation(color);
+      @include animation(background-color);
+    }
   }
 }

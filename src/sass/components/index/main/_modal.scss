@@ -21,8 +21,7 @@
   z-index: 999;
   top: 50%;
   left: 50%;
-  min-width: 320px;
-  min-height: 609px;
+
   padding: 40px;
   background-color: $colorTextTertiary;
   transform: translate(-50%, -50%) scale(1);
@@ -31,7 +30,7 @@
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   @include animation(transform);
-  overflow: scroll;
+  overflow: hidden;
   &__close {
     top: 14px;
     right: 14px;
@@ -175,6 +174,23 @@
 }
 .button__wrapper {
   @extend %flexibility;
+}
+
+@media (min-width: 481px) {
+  .modal {
+    min-width: 500px;
+    min-height: 609px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    width: 320px;
+    height: 609px;
+  }
+  .textarea {
+    width: 240px;
+  }
 }
 
 @media (min-width: 1600px) {

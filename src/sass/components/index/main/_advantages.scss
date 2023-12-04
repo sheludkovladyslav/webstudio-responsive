@@ -47,3 +47,35 @@
   display: flex;
   justify-content: center;
 }
+
+@media (min-width: 768px) {
+  .advantages__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .advantage {
+    flex-basis: calc((100% - 30px) / 2);
+    &__title {
+      text-align: left;
+    }
+  }
+
+  .advantage:nth-child(3) {
+    position: relative;
+    top: -10px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .advantages {
+    max-width: 1170px;
+    margin: 0 auto;
+    align-items: center;
+    padding-top:94px ;
+  }
+
+  .advantage {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}

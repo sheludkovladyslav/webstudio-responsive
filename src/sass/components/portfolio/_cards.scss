@@ -1,0 +1,66 @@
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+
+.project {
+  border: 1px solid #eee;
+  &:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    @include animation(box-shadow);
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    @include text($colorTextPrimary, 18px, 700);
+    line-height: 36px; /* 200% */
+    letter-spacing: 1.08px;
+    margin-bottom: 4px;
+    padding: 0px 24px;
+  }
+
+  &__category {
+    @include text($colorTextSecondary, 16px, 400);
+    padding: 0px 24px 20px 24px;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.48px;
+  }
+}
+
+.list__project {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .list__project {
+    margin: 0 auto;
+    max-width: 554px;
+    max-height: 640px;
+  }
+
+  .projects__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .projects__list {
+    width: 1450px;
+    margin: 0 auto;
+    row-gap: 30px;
+  }
+
+  .list__project {
+    max-width: 451px;
+    max-height: 403px;
+  }
+}

@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  min-width: 480px;
+  min-width: 320px;
 }
 
 img {
@@ -19,5 +19,25 @@ img {
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+}
+
+.logo {
+  @include text($colorTextActive, 24px, 700);
+  font-family: Raleway;
+  letter-spacing: 0.72px;
+}
+
+.socialmedia__icon {
+  width: 20px;
+  height: 20px;
+  fill: $colorTextSecondary;
+  @include animation(fill);
+  &:hover {
+    fill: $colorTextTertiary;
+  }
+}
+
+
+.hidden {
+  display: none;
 }

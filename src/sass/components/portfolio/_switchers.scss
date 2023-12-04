@@ -1,0 +1,39 @@
+.switcher {
+  @include text($colorTextPrimary, 16px, 500);
+  text-align: center;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 0.48px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  background: #f5f4fa;
+
+  &:hover {
+    color: $colorTextTertiary;
+    background-color: $colorTextActive;
+    @include animation(color);
+    @include animation(background-color);
+  }
+}
+
+.main__projects {
+  padding-top: 60px;
+  padding-inline: 15px;
+  border-top: 1px solid $borders;
+}
+
+.switchers {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.projects__switchers {
+    margin-bottom: 50px;
+}
+
+@media (min-width:768px) {
+    .switchers {
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+}

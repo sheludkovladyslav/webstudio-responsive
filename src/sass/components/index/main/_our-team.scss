@@ -49,15 +49,48 @@
 
   &__links {
     @extend %flexibility;
-    gap: 34px;
+    gap: 10px;
   }
 
-  &__link:hover .worker__svg {
-    fill: $colorTextActive;
+  &__link {
+    padding: 12px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    &:hover {
+      background-color: $colorTextActive;
+      @include animation(background-color);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .our-team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  &__svg {
-    width: 20px;
-    height: 20px;
+  .worker {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media (min-width: 1600px) {
+  .our-team__list {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .our-team {
+    margin-top: 95px;
+    &__title {
+      @include text($colorTextPrimary, 36px, 700);
+      margin-bottom: 50px;
+      letter-spacing: 1.08px;
+    }
+  }
+
+  .worker {
+    flex-basis: calc((100% - 90px) / 4);
   }
 }

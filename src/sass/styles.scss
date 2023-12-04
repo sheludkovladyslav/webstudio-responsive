@@ -3,8 +3,11 @@
 @import "utils/placeholders";
 @import "base-styles/reset";
 @import "base-styles/global";
-@import "components/header";
-@import "components/hero";
-@import "components/advantages";
-@import "components/our-team";
-@import "components/clients";
+@import "components/index/header/header";
+@import "components/index/main/hero";
+@import "components/index/main/advantages";
+@import "components/index/main/our-team";
+@import "components/index/main/clients";
+@import "components/index/main/activities";
+@import "components/index/footer/footer";
+@import "components/index/main/modal";

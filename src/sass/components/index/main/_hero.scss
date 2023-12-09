@@ -3,7 +3,7 @@
   background-position: center;
   background-size: cover;
   height: 400px;
-  width: 100%;
+  min-width: 350px;
   padding: 0px 60px;
   @extend %flexibility;
   align-items: center;

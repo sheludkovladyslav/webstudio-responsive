@@ -40,6 +40,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  overflow: scroll;
 }
 
 .container {
@@ -86,6 +87,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 350px;
   border-bottom: 1px solid #ECECEC;
 }
 .header__navigation-menu::after {
@@ -197,7 +199,7 @@ img {
   background-position: center;
   background-size: cover;
   height: 400px;
-  width: 100%;
+  min-width: 350px;
   padding: 0px 60px;
   align-items: center;
   flex-direction: column;
@@ -250,6 +252,10 @@ img {
   gap: 30px;
 }
 
+.main__advantages {
+  min-width: 350px;
+}
+
 .advantage {
   flex-direction: column;
 }
@@ -278,6 +284,7 @@ img {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .icon__wrapper {
@@ -315,10 +322,14 @@ img {
   .advantage {
     flex-basis: calc((100% - 90px) / 4);
   }
+  .advantage__text {
+    text-align: left;
+  }
 }
 .our-team__container {
   padding: 60px 15px;
   background-color: #f5f4fa;
+  min-width: 350px;
 }
 
 .our-team {
@@ -492,6 +503,7 @@ img {
 }
 .activities {
   padding: 60px 15px 0px 15px;
+  min-width: 350px;
 }
 .activities__title {
   color: #212121;
@@ -555,7 +567,7 @@ img {
 .footer {
   background-color: #2f303a;
   padding: 60px 0px;
-  min-width: 320pxs;
+  min-width: 350px;
 }
 .footer__logo {
   margin-bottom: 20px;

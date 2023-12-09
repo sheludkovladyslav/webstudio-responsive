@@ -35,6 +35,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  overflow: scroll;
 }
 
 .container {
@@ -81,6 +82,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 350px;
   border-bottom: 1px solid #ECECEC;
 }
 .header__navigation-menu::after {
@@ -190,7 +192,7 @@ img {
 .footer {
   background-color: #2f303a;
   padding: 60px 0px;
-  min-width: 320pxs;
+  min-width: 350px;
 }
 .footer__logo {
   margin-bottom: 20px;

@@ -1,5 +1,8 @@
 .activities {
   padding: 60px 15px 0px 15px;
+  min-width: 350px;
+
+ 
   &__title {
     @include text($colorTextPrimary, 28px, 700);
     text-align: center;

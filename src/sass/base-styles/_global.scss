@@ -3,6 +3,7 @@ body {
   font-family: $textFontPrimary;
   font-size: 14px;
   font-weight: 400;
+  overflow: scroll;
 }
 
 .container {
@@ -36,7 +37,6 @@ img {
     fill: $colorTextTertiary;
   }
 }
-
 
 .hidden {
   display: none;

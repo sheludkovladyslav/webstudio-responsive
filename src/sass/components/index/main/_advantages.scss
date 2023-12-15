@@ -11,10 +11,6 @@
   }
 }
 
-.main__advantages {
-  min-width: 350px;
-  }
-
 .advantage {
   @extend %flexibility;
   flex-direction: column;

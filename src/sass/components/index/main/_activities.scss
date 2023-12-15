@@ -1,8 +1,12 @@
 .activities {
-  padding: 60px 15px 0px 15px;
-  min-width: 350px;
-
- 
+  &__container {
+    margin-top: 30px;
+    padding: 60px 15px;
+    min-width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
   &__title {
     @include text($colorTextPrimary, 28px, 700);
     text-align: center;
@@ -15,15 +19,11 @@
     gap: 30px;
     row-gap: 50px;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
-.activities__item {
-  margin: 0 auto;
-}
-
 .activity {
-  max-width: 320px;
   position: relative;
   &__description {
     @include text($colorTextTertiary, 14px, 700);
@@ -34,17 +34,12 @@
     padding: 27px 0px;
     position: absolute;
     bottom: 0;
-    min-width: 320px;
+    left: 0;
+    right: 0;
   }
 }
 
 @media (min-width: 1600px) {
-  .activity {
-    max-width: 370px;
-  }
-  .activity__description {
-    min-width: 370px;
-  }
   .activities__title {
     @include text($colorTextPrimary, 36px, 700);
     margin-bottom: 50px;

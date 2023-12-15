@@ -1,10 +1,9 @@
 .header {
   padding: 16px;
   display: flex;
+  border-bottom: 1px solid $borders;
   justify-content: space-between;
   align-items: center;
-  min-width: 350px;
-  border-bottom: 1px solid $borders;
   &__navigation-menu::after {
     content: "";
     background-image: url(/src/img/header/menu.svg);
@@ -12,10 +11,13 @@
     height: 40px;
     display: block;
   }
+
   &__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
+
   &__contacts {
     display: flex;
     flex-direction: column;
@@ -23,6 +25,10 @@
     &:hover {
       color: $colorTextActive;
     }
+  }
+  &__nav-list {
+    display: flex;
+    gap: 51px;
   }
 }
 
@@ -78,7 +84,7 @@
 
 @media (max-width: 767px) {
   .header__contacts,
-  .list__item {
+  .header__nav-list {
     display: none;
   }
 }
@@ -91,6 +97,11 @@
   .header__container {
     display: flex;
     gap: 51px;
+    justify-content: space-between;
+  }
+
+  .nav__socialmedia {
+    display: none;
   }
 }
 
@@ -102,7 +113,6 @@
 
   .logo {
     font-size: 26px;
-    
   }
 
   .header__contacts {
@@ -110,4 +120,3 @@
     gap: 30px;
   }
 }
-

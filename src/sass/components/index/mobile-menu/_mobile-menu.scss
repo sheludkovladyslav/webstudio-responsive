@@ -86,8 +86,10 @@
     opacity: 1;
   }
 
-  .nav__link {
-    @include text($colorTextPrimary, 40px, 500x);
+  .nav__link,
+  .links__link,
+  .contacts__link {
+    @include text($colorTextPrimary, 40px, 500);
   }
 }
 
@@ -109,29 +111,34 @@
   border: none;
 }
 
-.links {
+.header__nav-links {
   display: flex;
   gap: 35px;
   flex-direction: column;
 }
 
-.nav__link--opened {
-    color: $colorTextActive;
+.nav__link--opened,
+.links__link--opened {
+  color: $colorTextActive;
 }
 
-.contacts {
+.header__nav-contacts {
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
 
 @media (max-width: 480px) {
-  .nav__link {
-    @include text($colorTextPrimary, 28px, 500x);
+  .nav__link, .links__link {
+    @include text($colorTextPrimary, 28px, 500);
   }
 
   .menu__link {
     @include text($colorTextActive, 12px, 500);
+  }
+
+  .links__link--opened {
+    @include text($colorTextActive, 28px, 500)
   }
 }
 
@@ -153,17 +160,17 @@
     flex-direction: column;
     gap: 65px;
   }
-  .nav__link--active {
+  .contacts__link--active {
     color: $colorTextActive;
   }
 }
 
 @media (min-width: 769px) {
-  .links {
+  .header__nav-links {
     flex-direction: row;
     align-items: center;
   }
-  .contacts {
+  .header__nav-contacts {
     gap: 10px;
   }
 

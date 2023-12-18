@@ -23,7 +23,7 @@
 }
 
 .client {
-  flex-basis: calc((100% - 30px) / 2);
+  flex-basis: 100%;
   &__container {
     border: 1px solid $colorTextSecondary;
     border-radius: 4px;
@@ -55,6 +55,12 @@
   margin-bottom: 60px;
 }
 
+@media (min-width:480px) {
+  .client {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
 
 @media (min-width: 768px) {
   .client {
@@ -62,7 +68,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .clients {
     width: 1170px;
     margin: 0 auto;

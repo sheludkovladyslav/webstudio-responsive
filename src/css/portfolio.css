@@ -96,20 +96,22 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.header__contacts {
+
+.contacts {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.header__contacts:hover {
+.contacts:hover {
   color: #2196f3;
 }
-.header__nav-list {
+
+.menu {
   display: flex;
   gap: 51px;
 }
 
-.socialmedia__item, .contacts__item, .links__item {
+.links__item {
   color: #212121;
   font-family: Roboto;
   font-size: 14px;
@@ -118,13 +120,23 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socialmedia__item:hover, .contacts__item:hover, .links__item:hover {
+.links__item:hover {
   color: #2196f3;
   border-bottom: 2px solid #2196f3;
   border-radius: 2px;
 }
 
-.header__logo--active {
+.socialmedia__item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socialmedia__item:hover {
+  color: #2196f3;
+  border-bottom: 2px solid #2196f3;
+  border-radius: 2px;
+}
+
+.logo--active {
   color: #212121;
 }
 
@@ -137,10 +149,17 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__item:hover {
   color: #2196f3;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-bottom: 2px solid #2196f3;
+  border-radius: 2px;
+}
+
+.contacts__item:nth-child(2):hover {
+  padding-bottom: 2px;
 }
 
 .contacts__item::before {
@@ -167,7 +186,7 @@ img {
 
 @media (max-width: 767px) {
   .header__contacts,
-  .header__nav-list {
+  .menu {
     display: none;
   }
 }
@@ -184,7 +203,7 @@ img {
     display: none;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .header {
     width: 1170px;
     margin: 0 auto;
@@ -192,7 +211,7 @@ img {
   .logo {
     font-size: 26px;
   }
-  .header__contacts {
+  .contacts {
     flex-direction: row;
     gap: 30px;
   }
@@ -267,10 +286,10 @@ img {
   .menu-open .nav__list {
     transform: translateX(0);
   }
-  .socialmedia-menu {
+  .socialmedia {
     opacity: 0;
   }
-  .menu-open .socialmedia-menu {
+  .menu-open .socialmedia {
     opacity: 1;
   }
   .nav__link,
@@ -278,11 +297,11 @@ img {
   .contacts__link {
     color: #212121;
     font-family: Roboto;
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 500;
   }
 }
-.socialmedia-menu {
+.socialmedia {
   display: none;
   gap: 10px;
 }
@@ -303,7 +322,7 @@ img {
   border: none;
 }
 
-.header__nav-links {
+.menu__list {
   display: flex;
   gap: 35px;
   flex-direction: column;
@@ -314,14 +333,14 @@ img {
   color: #2196f3;
 }
 
-.header__nav-contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
+.nav__link:hover,
+.links__link:hover {
+  color: #2196f3;
 }
 
 @media (max-width: 480px) {
-  .nav__link, .links__link {
+  .nav__link,
+  .links__link {
     color: #212121;
     font-family: Roboto;
     font-size: 28px;
@@ -344,10 +363,10 @@ img {
   .contacts__item::before {
     display: none;
   }
-  .header__nav-list {
+  .menu {
     padding-top: 100px;
   }
-  .socialmedia-menu {
+  .socialmedia {
     display: flex;
   }
   .nav__list-wrapper {
@@ -355,17 +374,19 @@ img {
     flex-direction: column;
     gap: 65px;
   }
-  .contacts__link--active {
+  .contacts__link:hover {
     color: #2196f3;
   }
 }
+@media (max-width: 767px) {
+  .menu__contacts {
+    gap: 20px;
+  }
+}
 @media (min-width: 769px) {
-  .header__nav-links {
+  .menu__list {
     flex-direction: row;
     align-items: center;
-  }
-  .header__nav-contacts {
-    gap: 10px;
   }
   .header__nav {
     width: 100%;
@@ -374,7 +395,7 @@ img {
     display: flex;
     gap: 10%;
   }
-  .header__nav-list {
+  .menu {
     justify-content: space-between;
   }
 }
@@ -405,6 +426,10 @@ img {
 }
 .footer__information--active {
   color: #fff;
+}
+.footer__mailing {
+  min-width: 320px;
+  max-width: 570px;
 }
 
 .information__container {
@@ -474,7 +499,6 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 15px;
-  width: 100%;
   color: #757575;
 }
 .mailing__container {
@@ -517,7 +541,7 @@ img {
     justify-content: space-evenly;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .footer__container {
     flex-direction: row;
     max-width: 1170px;
@@ -655,7 +679,7 @@ img {
     row-gap: 50px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .projects__list {
     width: 1450px;
     margin: 0 auto;

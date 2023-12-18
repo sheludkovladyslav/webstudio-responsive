@@ -39,7 +39,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .activities__title {
     @include text($colorTextPrimary, 36px, 700);
     margin-bottom: 50px;

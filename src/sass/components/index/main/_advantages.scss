@@ -36,7 +36,6 @@
     @include text($colorTextSecondary, 14px, 400);
     line-height: 24px;
     letter-spacing: 0.03em;
-    text-align: center;
   }
 }
 
@@ -68,7 +67,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .advantages {
     max-width: 1170px;
     margin: 0 auto;

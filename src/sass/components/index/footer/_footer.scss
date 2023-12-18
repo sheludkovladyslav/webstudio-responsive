@@ -26,6 +26,11 @@
       color: $colorTextTertiary;
     }
   }
+
+  &__mailing {
+    min-width: 320px;
+    max-width: 570px;
+  }
 }
 
 .information__container {
@@ -94,7 +99,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 15px;
-    width: 100%;
+
     color: $colorTextSecondary;
   }
   &__container {
@@ -137,7 +142,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .footer__container {
     flex-direction: row;
     max-width: 1170px;

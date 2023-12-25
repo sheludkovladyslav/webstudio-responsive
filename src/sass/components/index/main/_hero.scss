@@ -8,6 +8,17 @@
   align-items: center;
   flex-direction: column;
   row-gap: 30px;
+  @media (min-device-pixel-ratio: 1),
+    (min-resolution: 96dpi),
+    (min-resolution: 1dppx) {
+    background-image: url(/src/img/hero/hero@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/img/hero/hero@2x.jpg);
+  }
 
   &__title {
     @include text($colorTextTertiary, 26px, 900);
@@ -32,7 +43,7 @@
   }
 }
 
-@media (min-width:1600px) {
+@media (min-width: 1600px) {
   .hero {
     height: 600px;
     &__title {

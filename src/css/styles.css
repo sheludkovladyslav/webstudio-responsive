@@ -61,7 +61,7 @@ img {
 
 .logo {
   color: #2196f3;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 24px;
   font-weight: 700;
   font-family: Raleway;
@@ -118,7 +118,7 @@ img {
 
 .links__item {
   color: #212121;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
@@ -147,7 +147,7 @@ img {
 
 .contacts__item {
   color: #757575;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.24px;
@@ -238,7 +238,7 @@ img {
 }
 .hero__title {
   color: #fff;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 26px;
   font-weight: 900;
   text-align: center;
@@ -249,7 +249,7 @@ img {
 .hero__btn {
   padding: 10px 24px;
   color: #fff;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: 700;
   text-align: center;
@@ -314,7 +314,7 @@ img {
 }
 .advantage__title {
   color: #212121;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -324,7 +324,7 @@ img {
 }
 .advantage__text {
   color: #757575;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -380,7 +380,7 @@ img {
 }
 .our-team__title {
   color: #212121;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 28px;
   font-weight: 700;
   line-height: 33px;
@@ -405,7 +405,7 @@ img {
 }
 .worker__title {
   color: #212121;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -415,7 +415,7 @@ img {
 }
 .worker__job {
   color: #757575;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -456,7 +456,7 @@ img {
   }
   .our-team__title {
     color: #212121;
-    font-family: Roboto;
+    font-family: "Montserrat";
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -468,7 +468,7 @@ img {
 }
 .clients__title {
   color: #212121;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 28px;
   font-weight: 700;
   text-align: center;
@@ -538,7 +538,7 @@ img {
   }
   .clients__title {
     color: #212121;
-    font-family: Roboto;
+    font-family: "Montserrat";
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -558,7 +558,7 @@ img {
 }
 .activities__title {
   color: #212121;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 28px;
   font-weight: 700;
   text-align: center;
@@ -578,7 +578,7 @@ img {
 }
 .activity__description {
   color: #fff;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
   text-align: center;
@@ -595,7 +595,7 @@ img {
 @media (min-width: 1200px) {
   .activities__title {
     color: #212121;
-    font-family: Roboto;
+    font-family: "Montserrat";
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -624,7 +624,7 @@ img {
 }
 .footer__information {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
   text-align: center;
@@ -648,7 +648,7 @@ img {
 
 .social-media__title {
   color: #fff;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -691,7 +691,7 @@ img {
 }
 .mailing__title {
   color: #fff;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
   text-align: center;
@@ -718,7 +718,7 @@ img {
 }
 .mailing__btn {
   color: #fff;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: 700;
   text-align: center;
@@ -845,7 +845,7 @@ img {
 }
 .modal__title {
   color: #212121;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 20px;
   font-weight: 700;
   text-align: center;
@@ -859,7 +859,7 @@ img {
 }
 .modal__label {
   color: #757575;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.12px;
@@ -892,7 +892,7 @@ img {
 }
 .modal__accept {
   color: #757575;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
@@ -1061,7 +1061,7 @@ img {
   .links__link,
   .contacts__link {
     color: #212121;
-    font-family: Roboto;
+    font-family: "Montserrat";
     font-size: 28px;
     font-weight: 500;
   }
@@ -1073,7 +1073,7 @@ img {
 
 .menu__link {
   color: #2196f3;
-  font-family: Roboto;
+  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 500;
 }
@@ -1107,19 +1107,19 @@ img {
   .nav__link,
   .links__link {
     color: #212121;
-    font-family: Roboto;
+    font-family: "Montserrat";
     font-size: 28px;
     font-weight: 500;
   }
   .menu__link {
     color: #2196f3;
-    font-family: Roboto;
+    font-family: "Montserrat";
     font-size: 12px;
     font-weight: 500;
   }
   .links__link--opened {
     color: #2196f3;
-    font-family: Roboto;
+    font-family: "Montserrat";
     font-size: 28px;
     font-weight: 500;
   }
